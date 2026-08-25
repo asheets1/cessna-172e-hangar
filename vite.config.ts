@@ -150,6 +150,8 @@ export default defineConfig(({ command, isPreview }) => ({
     host: "0.0.0.0",
     port: 8080,
     strictPort: true,
+    // Allow http://<PC-NAME>:8080 from other devices on the LAN.
+    allowedHosts: true,
   },
   preview: {
     host: "127.0.0.1",
